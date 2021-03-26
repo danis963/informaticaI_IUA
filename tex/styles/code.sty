@@ -1,0 +1,147 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{../common/code}[2017/07/31 Easy code package]
+
+\RequirePackage{listings}
+\RequirePackage{tikz}
+\RequirePackage{kvoptions}
+
+\SetupKeyvalOptions{
+   family=code,
+   prefix=code@
+}
+
+\DeclareStringOption[lightgray]{highlightcolor}
+%\DeclareStringOption[gray]{numbercolor} Removed: better use ltset
+%\DeclareStringOption[blue]{keywordcolor} Removed: better use ltset
+
+\ProcessKeyvalOptions*
+
+%This stuff enables higlighting code on the corresponding slides
+\newcommand{\codehighlightcolor}{\code@highlightcolor}
+
+\usetikzlibrary{positioning,calc}
+\tikzset{onslide/.code args={<#1>#2}{%
+  \only<#1>{\pgfkeysalso{#2}} % \pgfkeysalso doesn't change the path
+}}
+
+\makeatletter
+\newenvironment<>{btHighlight}[1][]
+{\begin{onlyenv}#2\begingroup\tikzset{bt@Highlight@par/.style={#1}}\begin{lrbox}{\@tempboxa}}
+{\end{lrbox}\bt@HL@box[bt@Highlight@par]{\@tempboxa}\endgroup\end{onlyenv}}
+
+\newcommand<>\btHL[1][]{%
+  \only#2{\begin{btHighlight}[#1]\bgroup\aftergroup\bt@HL@endenv}%
+}
+\def\bt@HL@endenv{%
+  \end{btHighlight}%   
+  \egroup
+}
+\newcommand{\bt@HL@box}[2][]{%
+  \tikz[#1]{%
+    \pgfpathrectangle{\pgfpoint{1pt}{0pt}}{\pgfpoint{\wd #2}{\ht #2}}%
+    \pgfusepath{use as bounding box}%
+    \node[anchor=base west, fill=\codehighlightcolor,outer sep=0pt,inner xsep=1pt, inner ysep=0pt, rounded corners=3pt, minimum height=\ht\strutbox+1pt,#1]{\raisebox{1pt}{\strut}\strut\usebox{#2}};
+  }%
+}
+\makeatother
+%End of stuff for highlighting code using @
+
+\lstloadlanguages{Pascal,C,Python,Java,C++,Java,Haskell,Ml,Lisp,sh}
+
+\lstset{
+language=c++,
+showspaces=false,
+showstringspaces=false,
+showtabs=false,
+numbers=left,
+numberstyle=\color{gray},   % the style that is used for the line-numbers
+stepnumber=1,               % the step between two line-numbers. If it's 1, each line 
+                            % will be numbered
+numbersep=10pt,             % how far the line-numbers are from the code
+tabsize=2,
+basicstyle=\scriptsize, % print whole listing small
+keywordstyle=\bfseries\color{darkgray},
+breaklines=false,     % Automatic line breaking?
+breakatwhitespace=false,
+%identifierstyle=\bfseries, 
+commentstyle=\itshape, % white comments
+stringstyle=\color{gray}, % typewriter type for strings
+}
+
+\newcommand{\codechangesize}[1]{\lstset{basicstyle=#1}}
+\newcommand{\codechangelanguage}[1]{\lstset{language=#1}}
+\newcommand{\codesetstylenotepadpp}{
+	\lstset{numberstyle=\ttfamily\color{gray},
+	       stringstyle=\ttfamily\color{gray},
+		   commentstyle=\ttfamily\color{green},
+		   keywordstyle=\ttfamily\color{violet},
+		   identifierstyle=\ttfamily\color{black}
+		   }
+}
+
+\newcommand{\codesetstylegrayscale}{
+	\lstset{numberstyle=\color{gray},
+	       stringstyle=\color{gray},
+		   commentstyle=\itshape,
+		   keywordstyle=\bfseries\color{darkgray},
+		   identifierstyle=\mdseries\color{black}
+		   }
+	\renewcommand{\codehighlightcolor}{lightgray}
+}
+
+\newcommand{\codesetstylefrombeamer}{
+	\lstset{numberstyle=\color{alerted text.fg},
+			stringstyle=\color{normal text.fg},
+			keywordstyle=\bfseries\color{structure.fg},
+			commentstyle=\itshape\color{example text.fg},
+			identifierstyle=\bfseries\color{normal text.fg}
+		}
+	\renewcommand{\codehighlightcolor}{alerted text.fg}		
+}
+
+\lstnewenvironment{code}[1][\small]{%
+  \lstset{basicstyle=#1,moredelim={**[is][{\btHL<1>}]{@}{@}}}}
+{}
+\newcommand{\codefile}[2][\small]{\lstinputlisting[basicstyle=#1]{#2}}
+
+\lstnewenvironment{shcode}[1][\small]{%
+  \lstset{language=sh,basicstyle=#1,moredelim={**[is][{\btHL<1>}]{@}{@}}}}
+{}
+\newcommand{\shfile}[2][\small]{\lstinputlisting[language=sh,basicstyle=#1]{#2}}
+
+\lstnewenvironment{cppcode}[1][\small]{%
+\lstset{language=C++,basicstyle=#1,moredelim={**[is][{\btHL<1>}]{@}{@}}}}
+{}
+\newcommand{\cppfile}[2][\small]{\lstinputlisting[language=C++,basicstyle=#1]{#2}}
+
+\lstnewenvironment{javacode}[1][\small]{%
+\lstset{language=java,basicstyle=#1,moredelim={**[is][{\btHL<1>}]{@}{@}}}}
+{}
+\newcommand{\javafile}[2][\small]{\lstinputlisting[language=Java,basicstyle=#1]{#2}}
+
+\lstnewenvironment{pascalcode}[1][\small]{%
+\lstset{language=Pascal,basicstyle=#1,moredelim={**[is][{\btHL<1>}]{@}{@}}}}
+{}
+\newcommand{\pascalfile}[2][\small]{\lstinputlisting[language=Pascal,basicstyle=#1]{#2}}
+
+\lstnewenvironment{ccode}[1][\small]{%
+\lstset{language=C,basicstyle=#1,moredelim={**[is][{\btHL<1>}]{@}{@}}}}
+{}
+\newcommand{\cfile}[2][\small]{\lstinputlisting[language=C,basicstyle=#1]{#2}}
+
+\lstnewenvironment{pythoncode}[1][\small]{%
+\lstset{language=Python,basicstyle=#1,moredelim={**[is][{\btHL<1>}]{@}{@}}}}
+{}
+\newcommand{\pythonfile}[2][\small]{\lstinputlisting[language=Python,basicstyle=#1]{#2}}
+
+\lstnewenvironment{haskellcode}[1][\small]{%
+\lstset{language=Haskell,basicstyle=#1,moredelim={**[is][{\btHL<1>}]{@}{@}}}}
+{}
+\newcommand{\haskellfile}[2][\small]{\lstinputlisting[language=Haskell,basicstyle=#1]{#2}}
+
+\lstnewenvironment{adacode}[1][\small]{%
+\lstset{language=Ada,basicstyle=#1,moredelim={**[is][{\btHL<1>}]{@}{@}}}}
+{}
+\newcommand{\adafile}[2][\small]{\lstinputlisting[language=Ada,basicstyle=#1]{#2}}
+
+
