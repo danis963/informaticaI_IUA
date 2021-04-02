@@ -36,6 +36,46 @@
 \tableofcontents
 \end{frame}
 
+
+
+\begin{frame}{Etapas de un programa en C }
+
+ \begin{enumerate}
+   
+     	\item<1->  Escritura del código fuente: se pueden utilizar diferentes editores de texto: gedit, VIM, Zinjal, Atom, Emacs, etc. 
+     	
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/c_detras_de_escena/volumen_esfera.c}{\beamergotobutton{Ver en github}}
+
+
+        \item<2->  Pre-procesamiento: procesa directivas como $\#$include, $\#$define e $\#$if, remueve los comentarios, etc. En general, luego del preprocesamiento, el archivo resultante contiene una gran cantidad de líneas de código.
+       
+		\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/c_detras_de_escena/volumen_esfera.i}{\beamergotobutton{Ver en github}}
+		
+		
+	\item<3->  Compilado: el compilador de C traduce el código del apartado anterior a assembler. 
+     
+		\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/c_detras_de_escena/volumen_esfera.s}{\beamergotobutton{Ver en github}}
+		
+		
+				\item<4->  Ensamblado: el ensamblado transforma el programa escrito en lenguaje ensamblador a código objeto. 
+		
+		\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/c_detras_de_escena/volumen_esfera.o}{\beamergotobutton{Ver en github}}
+
+		
+
+				\item<5->  Enlazado: reune uno o más módulos en código objeto con el código existente en las bibliotecas.
+		
+		\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/c_detras_de_escena/a.out}{\beamergotobutton{Ver en github}}
+
+   \end{enumerate}
+   
+   
+
+\end{frame}
+
+
+
+
 \begin{frame} {Tipos de datos en C}
 El lenguaje de programación C es \textbf{fuertemente tipado}, es decir que cada vez que se necesite declarar u operar con una variable, se debe definir y tener presente el tipo de la misma. \\
 Nota: ver los tipos de datos \textit{Unsigned}
@@ -258,7 +298,6 @@ y = a * x + b
 
 
 
-\href{http://tex.stackexchange.com/q/20800/5701}{\beamergotobutton{Ver en github}}
 
 
 
