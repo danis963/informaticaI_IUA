@@ -4,6 +4,7 @@ Centro Regional Universitario Córdoba - IUA - Universidad de la Defensa Naciona
 
 Disclaimer
 =======
+Estas presentaciones tienen el objetivo de dar soporte al dictado de clases. De ninguna manera pueden sustituir los apuntes tomados en clases y/o la asistencia a las mismas. Por otro lado, todo el contenido de este repositorio se encuentra en versión alfa. Es decir, puede contener errores.
 
 Contacto
 =======
