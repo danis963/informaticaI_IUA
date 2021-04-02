@@ -10,12 +10,20 @@ Contacto
 Daniel A. Rosso
 drosso@iua.edu.ar
 
-To Do List:
+Content To Do List:
 =======
 
 - [X] Agregar datos de contacto al Readme
-- [ ] Layout del proyecto
-- [ ] Makefile para generar los pdf automaticamente
+- [X] Estructura de un programa en C: remover figuras y agregar los códigos al repo
+- [ ] Vectorizado de gráficos
 - [ ] Agregar disclaimer a los slides
-- [ ] Mejorar graficos switch case
-- [ ] Estructura de un programa en C: remover figuras y agregar los códigos al repo
+- [ ] Review errores de tipeo y ortografía
+
+Project To Do List:
+=======
+- [ ] Layout del proyecto
+- [ ] Makefile para generar los pdf automáticamente
+- [ ] Lint tex
+- [ ] Mejorar el layout de los códigos en C: dividir en carpetas
+- [ ] Dividir los .tex en secciones ortogonales y generar los pdf para cada clase
+- [ ] Centralizar la cabecerea en un solo archivo
