@@ -367,8 +367,6 @@ y = a * x + b
 \cppfile{../../c/src/1-2_switch_case.c}
 \end{frame}
 
-Los operadores relacionales y de igualdad binarios comparan el primer operando con el segundo para probar la validez de la relación especificada. El resultado de una expresión relacional es 1 si la relación probada es true y 0 si es false. 
-
 \begin{frame}{Operadores relacionales}
 \begin{block}{}
 Los operadores relacionales comparan el primer operando con el segundo y prueban la validez de la relación expresada. El resultado de una operación relacional es siempre verdadero o falso.
@@ -387,7 +385,7 @@ $>=$ & Primer operando mayor o igual que segundo operando \\
 $==$ & Primer operando igual a segundo operando \\ 
 $!=$ & Primer operando no igual a segundo operando\\ 
 \end{tabular}
-\caption{Especificadores de formato en C}
+\caption{Operadores relacionales en C}
 \end{table}
 
 
@@ -396,7 +394,7 @@ $!=$ & Primer operando no igual a segundo operando\\
 
 \begin{frame}{Operadores lógicos}
 \begin{block}{}
-Los operadores lógicos proporcionan un resultado a partir de que se cumpla o no una cierta condición. Sus operandos y su resultados son valores booleanos (verdadero o falso).
+Los operadores lógicos proporcionan un resultado a partir de que se cumpla o no una cierta condición. Sus operandos y su resultado son valores booleanos (verdadero o falso).
 \end{block}
 
 
@@ -409,13 +407,55 @@ $\&\&$ &  operador AND (y) lógico \\
 $||$ & 	operador OR  (o) lógico\\ 
 $!=$ & 	Operador NOT (no) lógico \\ 
 \end{tabular}
-\caption{Especificadores de formato en C}
+\caption{Operadores lógicos en C}
 \end{table}
-
-
-
-
 
 \end{frame}
 
+
+\begin{frame}{Estructura selectiva simple: Diagrama de flujo}
+\begin{block}{Definición}
+Está compuesta únicamente por una sola condición. Si al evaluarla resulta verdadera, se ejecutará la acción o acciones. Por el contrario, si la condición es falsa, no hará nada.
+\end{block}
+
+
+ \begin{figure}
+ \centering
+\includegraphics[scale=0.3]{../img/exported/if.png}
+\caption{Diagrama de flujo estructura selectiva simple}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{Estructura selectiva simple: pseudocódigo}
+\begin{block}{Definición}
+Está compuesta únicamente por una sola condición. Si al evaluarla resulta verdadera, se ejecutará la acción o acciones. Por el contrario, si la condición es falsa, no hará nada.
+\end{block}
+
+ \begin{itemize}
+   \item[]<1-> Inicio del algoritmo
+
+   \begin{itemize}
+   
+     	\item[]<2-> si (condición es verdadera)
+     	\begin{itemize}
+     			\item[]<3->  acción 1;
+     			\item[]<4->  acción 2;
+     			\item[]<5->  acción 3;
+     			\item[]<6->  acción 4;
+     	\end{itemize}
+     	 
+   \end{itemize}
+  \item[]<7-> Fin del algoritmo
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{Estructura selectiva simple: Ejemplo en C}
+\codesetstylefrombeamer
+\cppfile{../../c/src/2-0_if.c}
+\end{frame}
 \end{document}
