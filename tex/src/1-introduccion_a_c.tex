@@ -97,21 +97,44 @@ Nota: para estos ejemplos se supone que la variable se ha declarado de tipo int.
 \end{frame}
 
 
-\begin{frame}{Operaciones aritméticas en C}
+
+\begin{frame}[allowframebreaks] {Operadores en C}
+
+Operadores de asignación:
+
 \begin{table}
-\begin{tabular}{p{22mm} | p{22mm} | p{22mm} | p{22mm} | p{22mm} }
-Operación en C & Operador aritmético & Expresión algebraica & Expresión algebraica\\
+\begin{tabular}{p{15mm} | p{35mm} | p{22mm} | p{22mm} | p{22mm} }
+Operador & Acción & Ejemplo & Resultado\\
 \hline \hline 
-Adición 		& 	$+$   & $num + 10$ 	 	& $num + 10$ \\
-Sustracción 	& 	$-$	  & $num - 10$ 	 	& $num + 10$ \\
-Multiplicación 	& 	$*$   & $num.10$  		& $num * 10$ \\
-División 		& 	$/$	  & $num / 10$  	& $num / 10$ \\
-Resto 			& 	$\%$  & $num mod 10$  	& $num \% 10$ \\ 
+= & 	Asignación básica  		  & $x=10$ 	 	& x vale 10\\
+*= 	& 	Asignación producto       & $x*=10$ 	& x vale 100 \\
+/= 	& 	Asignación división       & $x/=2$      & x vale 50 \\
++= 		& Asignación suma         & $x+=5$  	& x vale 55\\
+-= 			& 	Asignación resta  & $x-=7$  	& x vale 48\\ 
 
 \end{tabular}
-\caption{Especificadores de formato en C}
+\caption{Operadores de asignación}
 \end{table}
 
+
+
+\newpage
+Operadores aritméticos:
+
+\begin{table}
+\begin{tabular}{p{15mm} | p{35mm} | p{22mm} | p{22mm} | p{22mm} }
+Operador & Acción & Ejemplo & Resultado\\
+\hline \hline  
+- 	& 	Resta & $x=12 - 3 $ & x vale 9\\
++ 	& 	Suma & $x=12 + 3 $ & x vale 15\\
+* 	& 	Multiplicación &  $x=12 * 3 $ & x vale 36\\
+/ 	& 	División &  $x=12 / 3 $ & x vale 4\\
+--	& 	Decremento &  $x=12; x-- $ & x vale 11\\
+++	& 	Incremento &  $x=12; x++ $ & x vale 13\\
+\%	& 	Modulo &  $x=13 \% 2 $ & x vale 1\\
+\end{tabular}
+\caption{Operadores de asignación}
+\end{table}
 
 
 
@@ -122,11 +145,11 @@ Resto 			& 	$\%$  & $num mod 10$  	& $num \% 10$ \\
 El lenguaje C evalúa las expresiones aritméticas en una secuencia precisa, por lo general son las mismas que aplicaríamos en el álgebra:\\
 
 \begin{enumerate}
-\item Las operaciones de multiplicación, división y módulo se resuelven primero. Si en una misma operación aparecen varias de ellas, se resuelven de izquierda a derecha
+\item<1->  Las operaciones de multiplicación, división y módulo se resuelven primero. Si en una misma operación aparecen varias de ellas, se resuelven de izquierda a derecha
 
-\item Las operaciones de suma y resta se aplican después. Si hubiese varias de estas, C separará en términos al igual que se haría en el álgebra
+\item<2->  Las operaciones de suma y resta se aplican después. Si hubiese varias de estas, C separará en términos al igual que se haría en el álgebra
 
-\item Luego de resueltas todas las operaciones, se procede a la asignación
+\item<3-> Luego de resueltas todas las operaciones, se procede a la asignación
 
 \end{enumerate}
 \end{frame}
@@ -151,9 +174,9 @@ y = a * x + b
 
  \begin{block}{Precedencia de operadores}
  \begin{enumerate}
-\item Operación $a * x$
-\item Operación $+b$
-\item Asignación del resultado a la variable $y$
+\item<1->  Operación $a * x$
+\item<2->  Operación $+b$
+\item<3->  Asignación del resultado a la variable $y$
 \end{enumerate}
   \end{block}
 \end{frame}
