@@ -415,7 +415,7 @@ $!=$ & 	Operador NOT (no) lógico \\
 
 \begin{frame}{Estructura selectiva simple: Diagrama de flujo}
 \begin{block}{Definición}
-Está compuesta únicamente por una sola condición. Si al evaluarla resulta verdadera, se ejecutará la acción o acciones. Por el contrario, si la condición es falsa, no hará nada.
+Se definen un conjunto de acciones a realizar, sólo si la condición de evaluación resulta VERDADERA. Para el caso contrario, no se realiza ninguna acción. 
 \end{block}
 
 
@@ -430,7 +430,7 @@ Está compuesta únicamente por una sola condición. Si al evaluarla resulta ver
 
 \begin{frame}{Estructura selectiva simple: pseudocódigo}
 \begin{block}{Definición}
-Está compuesta únicamente por una sola condición. Si al evaluarla resulta verdadera, se ejecutará la acción o acciones. Por el contrario, si la condición es falsa, no hará nada.
+Se definen un conjunto de acciones a realizar, sólo si la condición de evaluación resulta VERDADERA. Para el caso contrario, no se realiza ninguna acción. 
 \end{block}
 
  \begin{itemize}
@@ -458,4 +458,88 @@ Está compuesta únicamente por una sola condición. Si al evaluarla resulta ver
 \codesetstylefrombeamer
 \cppfile{../../c/src/2-0_if.c}
 \end{frame}
+
+
+
+\begin{frame}{Estructura selectiva doble: Diagrama de flujo}
+\begin{block}{Definición}
+Se definen un conjunto de acciones a realizar para el caso en que la condición dentro del rombo de decisión de la figura sea verdadera, como así también para el caso contrario. Es decir, la condición en el rombo de decisión resulte falsa.
+\end{block}
+
+
+ \begin{figure}
+ \centering
+\includegraphics[scale=0.3]{../img/exported/if_else.png}
+\caption{Diagrama de flujo estructura selectiva doble}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{Estructura selectiva doble: pseudocódigo}
+\begin{block}{Definición}
+Se definen un conjunto de acciones a realizar para el caso en que la condición dentro del rombo de decisión de la figura sea verdadera, como así también para el caso contrario. Es decir, la condición en el rombo de decisión resulte falsa.
+\end{block}
+
+ \begin{itemize}
+   \item[]<1-> Inicio del algoritmo
+
+   \begin{itemize}
+   
+     	\item[]<2-> si (condición es verdadera)
+     	\begin{itemize}
+     			\item[]<3->  acción 1;
+     			\item[]<4->  acción 2;
+     			\item[]<5->  acción 3;
+     			\item[]<6->  acción 4;
+     	\end{itemize}
+          	\item[]<7-> si no (condición falsa)
+     	\begin{itemize}
+     			\item[]<8->  acción 1;
+     			\item[]<9->  acción 2;
+     			\item[]<10->  acción 3;
+     			\item[]<11->  acción 4;
+     	\end{itemize}
+   \end{itemize}
+  \item[]<12-> Fin del algoritmo
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{Estructura selectiva doble: Ejemplo en C}
+\codesetstylefrombeamer
+\cppfile{../../c/src/2-1_if_else.c}
+\end{frame}
+
+
+\begin{frame}{Estructura selectiva doble: ejemplos}
+ \begin{enumerate}
+   
+     	\item Diseñar y codificar un programa que tome un número entero por teclado e indique si el número es positivo, negativo o cero.     	
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/2-2_if_else.c}{\beamergotobutton{Ver en github}}
+
+
+
+     	\item Diseñar y codificar un programa que tome dos números enteros por teclado e indique cual es el mayor. Si los números son iguales, se debe informar esta condición.
+     	
+	\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/2-3_if_else.c}{\beamergotobutton{Ver en github}}
+
+     	\item Diseñar y codificar un programa que tome las coordenadas de un punto en el plano cartesiano (x;y) e imprima por pantalla a que cuadrante pertenece el punto.
+
+
+	\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/2-4_if_else.c}{\beamergotobutton{Ver en github}}
+   
+   
+   
+       \item Diseñar y codificar un programa que tome por teclado el valor de cada uno de los lados de un triángulo y determine si es equilátero, isosceles o escaleno. También debe imprimir el perímetro del mismo.
+
+
+	\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/2-5_if_else.c}{\beamergotobutton{Ver en github}}
+   \end{enumerate}
+   
+
+\end{frame}
+
 \end{document}
