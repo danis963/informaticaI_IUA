@@ -185,12 +185,85 @@ y = a * x + b
 \cppfile{../../c/src/1-1_presedencia_operadores.c}
 \end{frame}
 
-\begin{frame}{Estrucutra selectiva Switch}
+\begin{frame}{Estrucutra selectiva múltiple: Switch}
 
- \begin{block}{Estrucutra selectiva Switch}
+ \begin{block}{Aplicación}
+ Permite que un programa en C tome diferentes caminos en función del valor que tome una determinada instrucción.
+ 
+ 
  \end{block}
 
+ \begin{block}{Pseudocódigo}
+
+    \begin{itemize}
+   \item[]Según sea (variable de control)
+   \begin{itemize}
+
+     	\item[] Caso 1:
+     	    \begin{itemize}
+     			\item[] Instrucciones caso 1
+     			\item[] Instrucciones caso 1
+     			\item[] frenar
+     		   \end{itemize}
+
+        \item[] Caso 2:
+     	    \begin{itemize}
+     			\item[] Instrucciones caso 2
+     			\item[] Instrucciones caso 2
+
+     			\item[] frenar
+ 		
+   			\end{itemize}
+    
+    \item[] Caso por descarte:
+     	    \begin{itemize}
+     			\item[] Instrucciones caso por descarte
+     			\item[] frenar
+ 		
+   			\end{itemize}
+ 		
+   \end{itemize}
+
+	\end{itemize}
+
+
+ \end{block}
+
+
+
+
+
 \end{frame}
+
+
+
+\begin{frame}{Estrucutra selectiva múltiple: Switch}
+
+\begin{figure}
+
+\includegraphics[scale=0.201]{../img/exported/switch.png}
+\caption{Diagrama de flujo para la estructura switch}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Estrucutra selectiva múltiple: Switch}
+\codesetstylefrombeamer
+\cppfile{../../c/src/1-2_switch_case.c}
+\end{frame}
+
+
+
+\begin{frame}{Buenas practicas de programación}
+
+
+
+\href{http://tex.stackexchange.com/q/20800/5701}{\beamergotobutton{Ver en github}}
+
+
+
+\end{frame}
+
 
 
 \end{document}
