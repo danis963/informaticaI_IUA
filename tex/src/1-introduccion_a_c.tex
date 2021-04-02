@@ -76,7 +76,7 @@
 
 
 
-\begin{frame}[allowframebreaks]{Buenas practicas de programación}
+\begin{frame}{Buenas practicas de programación}
 \begin{itemize}
 
 \item<1-> Proyectos con aproximadamente 300.000 lineas de código o menos
@@ -95,20 +95,25 @@
 \end{itemize}
 
 
-\item<9-> Proyectos con aproximadamente más de 50 millones de líneas de código
+\item<9-> Proyectos con aproximadamente más de 50 millones
 \begin{itemize}
-\item<10->  Colisionador de hadrones
-\item<11->  Windows Vista
-\item<12->  Debian 5.0
+\item<10->  Age of empires - Versión online
+\item<11->  Linux kernel 2.2.0
+\item<12->  Windows 3.1 (1992)
 \end{itemize}
+
+
 
 \item<13-> Proyectos con aproximadamente más de 2 mil millones de líneas de código
 \begin{itemize}
 \item<14->  Google Internet Services
+\end{itemize}
+
 
 \end{itemize}
 
-\end{itemize}
+
+
 \end{frame}
 
 
@@ -161,30 +166,17 @@ Ejemplo	: scanf("$\%d$", $\&$edad); \\
     \end{block}
 
  \begin{block}{Printf}
-Es una función de la li\begin{enumerate}
-\item<1->  Las operaciones de multiplicación, división y módulo se resuelven primero. Si en una misma operación aparecen varias de ellas, se resuelven de izquierda a derecha
-
-\item<2->  Las operaciones de suma y resta se aplican después. Si hubiese varias de estas, C separará en términos al igual que se haría en el álgebra
-
-\item<3-> Luego de resueltas todas las operaciones, se procede a la asignación
-
-\end{enumerate}brería de entrada/salida \begin{enumerate}
-\item<1->  Las operaciones de multiplicación, división y módulo se resuelven primero. Si en una misma operación aparecen varias de ellas, se resuelven de izquierda a derecha
-
-\item<2->  Las operaciones de suma y resta se aplican después. Si hubiese varias de estas, C separará en términos al igual que se haría en el álgebra
-
-\item<3-> Luego de resueltas todas las operaciones, se procede a la asignación
-
-\end{enumerate}de C que permite imprimir información por pantalla.\\ 
+Es una función de la librería de entrada/salida de C que permite imprimir información por pantalla.\\ 
 Sintaxis: printf("especificador de formato", variable); \\ 
 Ejemplo: printf("Su edad es: " $\%d$ , edad);
     \end{block}
     
-
 Nota: para estos ejemplos se supone que la variable se ha declarado de tipo int. Ver ejemplos siguientes.
 \codesetstylefrombeamer
 \cppfile{../../c/src/1-0_data_types_edad_peso.c}
 \end{frame}
+
+
 
 
 
