@@ -28,3 +28,4 @@ Project To Do List:
 - [ ] Mejorar el layout de los códigos en C: dividir en carpetas
 - [ ] Dividir los .tex en secciones ortogonales y generar los pdf para cada clase
 - [ ] Centralizar la cabecerea en un solo archivo
+- [ ] Agregar dependencias de latex y C
