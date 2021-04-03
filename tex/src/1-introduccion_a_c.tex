@@ -574,6 +574,96 @@ Se definen un conjunto de acciones a realizar para el caso en que la condición 
 
 \end{frame}
 
-\begin{frame}{Ciclo repetitivo FOR}
+\begin{frame}{Ciclo repetitivo for}
+
+\begin{block}{Definición}
+Es una estructura repetitiva controlada por contador. En general, se la utiliza cuando se conoce previamente la cantida de veces que las acciones seran ejecutadas.
+\end{block}
+
+Esta compuesto por:
+
+\begin{itemize}
+\item Valor inicial de la variable de control
+\item Condicion de continuacion de ciclo
+\item Incremento de la variable de control
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Ciclo repetitivo for: pseudocodigo y diagrama de flujo }
+
+\begin{itemize}
+   \item[]<1-> Inicio del algoritmo
+
+   \begin{itemize}
+   		\item[]<2-> i=0 definicion de la variable control
+     	anidacion\item[]<3-> Para i=0 hasta N
+     	\begin{itemize}
+     			\item[]<4->  acción 1;
+     			\item[]<5->  acción 2;
+     			\item[]<6->  acción 3;
+     			\item[]<7->  acción 4;
+     	\end{itemize}
+   \end{itemize}
+  \item[]<8-> Fin del algoritmo
+  \item[]<9-> 
+   \begin{figure}
+ \centering
+\includegraphics[scale=0.25]{../img/exported/for.png}
+\caption{Estructura repetitiva For.}
+\end{figure}
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}{Ciclo repetitivo for: Codificacion en C}
+\codesetstylefrombeamer
+\cppfile{../../c/src/3-1-for.c}
+\end{frame}
+
+
+\begin{frame}{Ciclo repetitivo for: anidacion}
+\begin{itemize}
+   \item[]<1-> Inicio del algoritmo
+
+   \begin{itemize}
+   		\item[]<2-> i=0 definicion de la variable control ciclo repetivivo I
+   		\item[]<3-> j=0 definicion de la variable control ciclo repetivivo II
+     	\item[]<4-> Para i=0 hasta N
+     		\item[]<5-> \hspace{0.3in} Para j=0 hasta M
+     		\item[]<6->  \hspace{0.5in} accion dentro del ciclo II
+         	\item[]<7->  \hspace{0.5in} accion dentro del ciclo II
+			\item[]<8->  \hspace{0.5in} accion dentro del ciclo II
+   
+   \item[]<9->  \hspace{0.3in}  accion dentro del ciclo I
+   \item[]<10->  \hspace{0.3in}  accion dentro del ciclo I
+   \item[]<11->  \hspace{0.3in}  accion dentro del ciclo I
+   \end{itemize}
+  \item[]<12-> Fin del algoritmo\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Ciclo repetitivo for: anidacion}
+\codesetstylefrombeamer
+\cppfile{../../c/src/3-4-for.c}
+\end{frame}
+
+
+
+
+\begin{frame}{Ciclo repetitivo for: ejemplos}
+ \begin{enumerate}
+   
+     	\item Diseñar y codificar un programa que tome un número entero por teclado e indique si el número es positivo, negativo o cero.     	
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/2-2_if_else.c}{\beamergotobutton{Ver en github}}
+
+
+
+   \end{enumerate}
+   
+
 \end{frame}
 \end{document}
