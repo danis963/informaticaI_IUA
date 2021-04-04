@@ -19,6 +19,7 @@ Content To Do List:
 - [ ] Vectorizado de gráficos
 - [ ] Agregar disclaimer a los slides
 - [ ] Review errores de tipeo y ortografía
+- [ ] Agregar links a github de los ejemplos que aparecen en los slides
 
 Project To Do List:
 =======
@@ -29,3 +30,5 @@ Project To Do List:
 - [ ] Dividir los .tex en secciones ortogonales y generar los pdf para cada clase
 - [ ] Centralizar la cabecerea en un solo archivo
 - [ ] Agregar dependencias de latex y C
+- [ ] Generar una version imprimible de los pdf: sin los items apareciendo
+- [ ] Buscar como embeber una terminal en los slides y correr step by step
