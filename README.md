@@ -16,6 +16,7 @@ Content To Do List:
 
 - [X] Agregar datos de contacto al Readme
 - [X] Estructura de un programa en C: remover figuras y agregar los códigos al repo
+- [ ] Mejorar el layout agregando el logo de la UNDEF
 - [ ] Vectorizado de gráficos
 - [ ] Agregar disclaimer a los slides
 - [ ] Review errores de tipeo y ortografía

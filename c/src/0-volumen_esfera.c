@@ -1,11 +1,13 @@
 #include <stdio.h>
+#define PI 3.141516
 int main()
 {
-  int edad=0;
-  float peso=0;
-  printf("Ingrese su edad \n");
-  scanf("%d",&edad);
-  printf("Ingrese su peso\n");
-  scanf("%f",&peso);
-  printf("Su edad es %d y su peso %f\n",edad,peso);
+  float radio=0;
+  float volumen=0;
+  printf("Ingrese el radio de la esfera \n");
+  scanf("%f",&radio);
+
+  volumen=3*PI*radio/4;
+
+  printf("El volumen de la esfera de radio %f es %f\n",radio, volumen);
 }

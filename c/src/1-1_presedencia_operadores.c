@@ -10,7 +10,7 @@ int main()
   printf("Ingrese el valor de la ordenada al origen \n");
   scanf("%f",&x);
   printf("Ingrese el valor de la variable indep \n");
-  scanf("%",&b);
+  scanf("%f",&b);
   y=m*x+b; /*Operacion*/
   printf("el valor de y(%f)=%f \n",x,y);
 
