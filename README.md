@@ -16,11 +16,20 @@ Content To Do List:
 
 - [X] Agregar datos de contacto al Readme
 - [X] Estructura de un programa en C: remover figuras y agregar los códigos al repo
+- [ ] Estructura de un programa en C: añadir figura con cada uno de los pasos
 - [ ] Mejorar el layout agregando el logo de la UNDEF
 - [ ] Vectorizado de gráficos
 - [ ] Agregar disclaimer a los slides
 - [ ] Review errores de tipeo y ortografía
 - [ ] Agregar links a github de los ejemplos que aparecen en los slides
+
+Fixes:
+=======
+- [ ] Tipos de datos en C: revisar los rangos
+- [ ] Operadores en C: operador de decremento, falta un - en el --
+- [ ] Printf, scanf: repasar el formato. No sale bien en el pdf visto con el evince.
+
+
 
 Project To Do List:
 =======
