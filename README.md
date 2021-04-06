@@ -13,7 +13,7 @@ drosso@iua.edu.ar
 
 Content To Do List:
 =======
-
+Items a ir resolviendo para mejorar el contenido y la calidad de las presentaciones
 - [X] Agregar datos de contacto al Readme
 - [X] Estructura de un programa en C: remover figuras y agregar los códigos al repo
 - [ ] Estructura de un programa en C: añadir figura con cada uno de los pasos
@@ -25,6 +25,8 @@ Content To Do List:
 
 Fixes:
 =======
+Fixes de clases que ya pasaron y deben ser solucionados para el año próximo
+
 - [ ] Tipos de datos en C: revisar los rangos
 - [ ] Operadores en C: operador de decremento, falta un - en el --
 - [ ] Printf, scanf: repasar el formato. No sale bien en el pdf visto con el evince.
@@ -33,6 +35,7 @@ Fixes:
 
 Project To Do List:
 =======
+Items relacionados a la estrucutra del proyecto y no tienen relación con el contenido
 - [ ] Layout del proyecto
 - [ ] Makefile para generar los pdf automáticamente
 - [ ] Lint tex
