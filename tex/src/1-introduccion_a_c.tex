@@ -18,6 +18,8 @@
 \usepackage{longtable}
 \newcommand*{\thead}[1]{\multicolumn{1}{c}{\bfseries #1}}
 
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.3](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
 
 %\setbeamercovered{transparent} 
 %\setbeamertemplate{navigation symbols}{} 
@@ -138,8 +140,23 @@
 	\begin{itemize}
 		\item<8-> Debe realizarse con tabulaciones, nunca con espacios
 		\item<9-> Deben colocarse llaves para demarcar gráficamente el código que ejcutará cada estructura
-		\item<10-> Las líneas de código no deben superar la longitud de 80 caracteres
+
+		\item<10-> Las llaves deben escribirse siempre
+		
+		\item<11-> Las líneas de código no deben superar la longitud de 80 caracteres
+
+		
 	\end{itemize}
+
+\item<12-> Instrucciones que se deben evitar
+	\begin{itemize}
+		\item<13-> goto
+		\item<14-> Break
+		\item<15-> Continue
+
+		
+	\end{itemize}
+
 \end{itemize}
 
     
@@ -336,11 +353,10 @@ y = a * x + b
      			\item[] frenar
  		
    			\end{itemize}
- 		
+
    \end{itemize}
 
 	\end{itemize}
-
 
  \end{block}
 
@@ -621,9 +637,459 @@ Esta compuesto por:
 
 \begin{frame}{Ciclo repetitivo for: Codificacion en C}
 \codesetstylefrombeamer
-\cppfile{../../c/src/3-1-for.c}
+\cppfile{../../c/src/3-0-for.c}
 \end{frame}
 
+
+\begin{frame}[allowframebreaks]{Ciclo repetitivo for: Tabla de verificación}
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<5$ & printf("\%d",i) & ii++ \\ 
+\hline 
+0 &  &  &  \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark &  &  \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 &  \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+
+
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & & &\\ 
+\hline
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 &\\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 &\\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+2 &  &  &  \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline  
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+2 & \checkmark &  &  \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+2 & \checkmark & 2 &  \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+
+
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+2 & \checkmark & 2 & 3 \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+2 & \checkmark & 2 & 3 \\ 
+\hline 
+3 & & & \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+2 & \checkmark & 2 & 3 \\ 
+\hline 
+3 & \checkmark  & & \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+2 & \checkmark & 2 & 3 \\ 
+\hline 
+3 & \checkmark  & 3 & \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+2 & \checkmark & 2 & 3 \\ 
+\hline 
+3 & \checkmark  & 3 & 4 \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+2 & \checkmark & 2 & 3 \\ 
+\hline 
+3 & \checkmark  & 3 & 4 \\ 
+\hline 
+4 & &  &  \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+2 & \checkmark & 2 & 3 \\ 
+\hline 
+3 & \checkmark  & 3 & 4 \\ 
+\hline 
+4 & \checkmark &  &  \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+2 & \checkmark & 2 & 3 \\ 
+\hline 
+3 & \checkmark  & 3 & 4 \\ 
+\hline 
+4 & \checkmark & 4 &  \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+
+
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+2 & \checkmark & 2 & 3 \\ 
+\hline 
+3 & \checkmark  & 3 & 4 \\ 
+\hline 
+4 & \checkmark & 4 & 5 \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+ii &ii $<$5 & printf("\%d",i) & ii++ \\ 
+\hline 
+0 & \checkmark & 0 & 1\\ 
+\hline 
+1 & \checkmark & 1 & 2 \\ 
+\hline 
+2 & \checkmark & 2 & 3 \\ 
+\hline 
+3 & \checkmark  & 3 & 4 \\ 
+\hline 
+4 & \checkmark & 4 & 5 \\ 
+\hline 
+5 & X & &  \\ 
+\hline 
+\end{tabular} 
+\column{0.3\textwidth}
+ \begin{figure}
+\includegraphics[scale=0.4]{../img/exported/for_code.png}
+\caption{Estructura repetitiva for: ejemplo}
+\end{figure}
+\end{columns}
+
+
+
+\end{frame}
 
 \begin{frame}{Ciclo repetitivo for: anidacion}
 \begin{itemize}
