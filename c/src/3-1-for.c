@@ -12,5 +12,5 @@ int main()
         suma+=numero;
   }
   printf("La suma de todos los numeros es %d",suma);
-
+ return (0);
 }

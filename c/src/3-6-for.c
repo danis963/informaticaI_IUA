@@ -2,9 +2,9 @@
 #include <stdio.h>
 int main()
 {
-  int i=0; int j=0; int nota=0; int acumulador=0; 
+  int i=0; int j=0; int nota=0; int acumulador=0;
   float prom;
-  for (i=0; i<CANTIDAD_ALUMNOS; i++)  
+  for (printf("Me ejecuto una vez"); ; printf("i vale %d",i); printf("i vale %d",i); i<10; i++)
   {
       for(j=0;j<3;j++)
       {
@@ -15,5 +15,5 @@ int main()
       prom = acumulador / 3.0;
       printf("Promedio del alumno %d es %f\n",i,prom);
   }
-
+ return (0);
 }

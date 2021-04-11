@@ -24,5 +24,5 @@ int main()
  printf("El valor de la suma es %d",suma);
  printf("El valor de la multiplicacion es %d",multiplicacion);
  printf("El valor del promedio es %f",promedio);
-  return (0);
+ return (0);
 }

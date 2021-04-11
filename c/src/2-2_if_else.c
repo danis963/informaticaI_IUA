@@ -24,5 +24,5 @@ int main()
     printf("El número ingresado es positivo \n");
     }
   }
-
+ return (0);
 }

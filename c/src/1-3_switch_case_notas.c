@@ -29,4 +29,5 @@ int main()
             printf("La nota es invalida\n");
             break;
   }
+   return (0);
 }

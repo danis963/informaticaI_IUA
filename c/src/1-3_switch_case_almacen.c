@@ -52,4 +52,5 @@ int main()
   }
 
   printf("El resultado de la operación es %f\n\n",resultado);
+  return (0);
 }

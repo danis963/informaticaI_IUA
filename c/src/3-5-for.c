@@ -1,5 +1,5 @@
 /*Diseñar y codificar un programa en C que reciba
-la cantidad de filas y columnas de una matriz y luego imprima 
+la cantidad de filas y columnas de una matriz y luego imprima
 dicha matriz donde cada elemento vale la suma de su posicion*/
 
 
@@ -21,9 +21,9 @@ int main()
   {
       for (ctrl_columnas=0; ctrl_columnas < cantidad_columnas; ctrl_columnas++)
       {
-        printf("%d\t",(ctrl_filas+ctrl_columnas)); 
+        printf("%d\t",(ctrl_filas+ctrl_columnas));
       }
       printf("\n");
   }
-
+ return (0);
 }

@@ -26,5 +26,5 @@ int main()
       printf("El número %d es mayor que %d \n",numero2,numero1);
     }
   }
-
+ return (0);
 }

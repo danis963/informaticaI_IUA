@@ -16,4 +16,6 @@ int main()
      default:
             printf("Usted ingreso una opcion invalida\n");
             break;}
+
+ return (0);
 }

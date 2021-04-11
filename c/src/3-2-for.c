@@ -21,10 +21,10 @@ int main()
         else
         {
           negativos_cantidad+=1;
-        } 
+        }
   }
   printf("Se ingresaron %d numeros ",CANTIDAD);
   printf("%d positivos ",positivos_cantidad);
   printf("%d negativos ",negativos_cantidad);
-
+ return (0);
 }

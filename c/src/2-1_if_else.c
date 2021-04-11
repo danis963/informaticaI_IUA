@@ -13,4 +13,5 @@ int main()
   {
     printf("El alumno aprobo el examen\n");
   }
+   return (0);
 }
