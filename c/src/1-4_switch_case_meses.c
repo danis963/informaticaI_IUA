@@ -12,7 +12,7 @@ int main()
 		case  6:
 		case  9:
 		case 11:
-			printf("El mes ingresado tiene 30 dias");
+			printf("El mes ingresado tiene 30 dias\n\n");
 			break;
 		case  1:
 		case  3:
@@ -21,16 +21,15 @@ int main()
 		case  8:
 		case 10:
 		case 12:
-			printf("El mes ingresado tiene 31 dias");
+			printf("El mes ingresado tiene 31 dias\n\n");
 			break;
 
 		case 2:
-			printf("El mes ingresado tiene 28 dias");
-			dias=28;
+			printf("El mes ingresado tiene 28 dias\n\n");
 			break;
 
 		default:
-			printf("El mes ingresado es invalido");
+			printf("El mes ingresado es invalido\n\n");
 			break;
 	}
 
