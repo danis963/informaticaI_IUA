@@ -26,11 +26,11 @@ Items a ir resolviendo para mejorar el contenido y la calidad de las presentacio
 Fixes:
 =======
 Fixes de clases que ya pasaron y deben ser solucionados para el año próximo
-
 - [ ] Tipos de datos en C: revisar los rangos
 - [ ] Operadores en C: operador de decremento, falta un - en el --
 - [ ] Printf, scanf: repasar el formato. No sale bien en el pdf visto con el evince.
-
+- [ ] Agregar ejemplos de la prueba de escritorio puesto que no quedó claro sólo con el concepto
+- [ ] Agregar diagrama de flujo en el caso de que el switch no tenga los breaks
 
 
 Project To Do List:
