@@ -16,7 +16,8 @@ Content To Do List:
 Items a ir resolviendo para mejorar el contenido y la calidad de las presentaciones
 - [X] Agregar datos de contacto al Readme
 - [X] Estructura de un programa en C: remover figuras y agregar los códigos al repo
-- [ ] Estructura de un programa en C: añadir figura con cada uno de los pasos
+- [X] Estructura de un programa en C: añadir figura con cada uno de los pasos
+- [ ] Estructura retetitiva for: cambio de la figura usada para la tabla de verif
 - [ ] Mejorar el layout agregando el logo de la UNDEF
 - [ ] Vectorizado de gráficos
 - [ ] Agregar disclaimer a los slides
@@ -27,12 +28,14 @@ Fixes:
 =======
 Fixes de clases que ya pasaron y deben ser solucionados para el año próximo
 - [ ] Tipos de datos en C: revisar los rangos
+- [ ] Agregar tabla de palabras reservadas
 - [ ] Operadores en C: operador de decremento, falta un - en el --
 - [ ] Printf, scanf: repasar el formato. No sale bien en el pdf visto con el evince.
 - [ ] Agregar ejemplos de la prueba de escritorio puesto que no quedó claro sólo con el concepto
+- [ ] Estructura de un programa en C: actualizar el gráfico
 - [ ] Agregar diagrama de flujo en el caso de que el switch no tenga los breaks
-
-
+- [ ] En la estructura switch agregar un ejercicio de conversión de horarios. Es simple y aporta aritmética.
+- [ ] Agregar gráficos de los operadores lógicos: tablas de verdad y circuitos con lámparas. Ayudaría a comprender el concepto.
 Project To Do List:
 =======
 Items relacionados a la estrucutra del proyecto y no tienen relación con el contenido
