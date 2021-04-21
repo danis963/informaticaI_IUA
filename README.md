@@ -36,6 +36,7 @@ Fixes de clases que ya pasaron y deben ser solucionados para el año próximo
 - [ ] Agregar diagrama de flujo en el caso de que el switch no tenga los breaks
 - [ ] En la estructura switch agregar un ejercicio de conversión de horarios. Es simple y aporta aritmética.
 - [ ] Agregar gráficos de los operadores lógicos: tablas de verdad y circuitos con lámparas. Ayudaría a comprender el concepto.
+- [ ] En la estructura selectiva simple y doble cambiar los números de las acciones. Puede presentar confusión
 Project To Do List:
 =======
 Items relacionados a la estrucutra del proyecto y no tienen relación con el contenido
