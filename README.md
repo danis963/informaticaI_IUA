@@ -37,6 +37,7 @@ Fixes de clases que ya pasaron y deben ser solucionados para el año próximo
 - [ ] En la estructura switch agregar un ejercicio de conversión de horarios. Es simple y aporta aritmética.
 - [ ] Agregar gráficos de los operadores lógicos: tablas de verdad y circuitos con lámparas. Ayudaría a comprender el concepto.
 - [ ] En la estructura selectiva simple y doble cambiar los números de las acciones. Puede presentar confusión
+- [ ] En la repetitiva for: agregar ejemplos de acumuladores y anidación
 
 
 Project To Do List:
@@ -51,3 +52,4 @@ Items relacionados a la estrucutra del proyecto y no tienen relación con el con
 - [ ] Agregar dependencias de latex y C
 - [ ] Generar una version imprimible de los pdf: sin los items apareciendo
 - [ ] Buscar como embeber una terminal en los slides y correr step by step
+- [ ] IMPORTANTE: correr programas step by step

@@ -2,7 +2,7 @@
 100 numeros ingresados por teclado e imprima la cantidad de positivos y negativos.
 El cero es considerado positivo*/
 
-#define CANTIDAD 10
+
 #include <stdio.h>
 int main()
 {
@@ -10,7 +10,7 @@ int main()
   int positivos_cantidad=0;
   int negativos_cantidad=0;
   int numero;
-  for (var_control=0; var_control < CANTIDAD; var_control++)
+  for (var_control=0; var_control < 10; var_control++)
   {
         printf("Ingrese el numero %d\n",var_control);
         scanf("%d",&numero);
@@ -23,7 +23,6 @@ int main()
           negativos_cantidad+=1;
         }
   }
-  printf("Se ingresaron %d numeros ",CANTIDAD);
   printf("%d positivos ",positivos_cantidad);
   printf("%d negativos ",negativos_cantidad);
  return (0);
