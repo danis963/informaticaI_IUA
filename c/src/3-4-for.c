@@ -1,19 +1,24 @@
-#define CANTIDAD_ALUMNOS    2
 #include <stdio.h>
 int main()
 {
-  int i=0; int j=0; int nota=0; int acumulador=0;
-  float prom;
-  for (i=0; i<CANTIDAD_ALUMNOS; i++)
+  int var_control       =0;
+  int positivos_cantidad=0;
+  int negativos_cantidad=0;
+  int numero            =0;
+  for (var_control=0; var_control < 10; var_control++)
   {
-      for(j=0;j<3;j++)
-      {
-        printf("Ing. la nota %d del alumno %d\n",j,i);
-        scanf("%d",&nota);
-        acumulador+=nota;
-      }
-      prom = acumulador / 3.0;
-      printf("Promedio del alumno %d es %f\n",i,prom);
+        printf("Ingrese el numero %d\n",var_control);
+        scanf("%d",&numero);
+        if(numero>=0)
+        {
+          positivos_cantidad=positivos_cantidad+1;
+        }
+        else
+        {
+          negativos_cantidad=negativos_cantidad+1;
+        }
   }
+  printf("%d positivos ",positivos_cantidad);
+  printf("%d negativos ",negativos_cantidad);
  return (0);
 }

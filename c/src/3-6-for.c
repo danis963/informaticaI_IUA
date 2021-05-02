@@ -1,10 +1,9 @@
-#define CANTIDAD_ALUMNOS    2
 #include <stdio.h>
 int main()
 {
   int i=0; int j=0; int nota=0; int acumulador=0;
   float prom;
-  for (printf("Me ejecuto una vez"); ; printf("i vale %d",i); printf("i vale %d",i); i<10; i++)
+  for (i=0; i<10; i++)
   {
       for(j=0;j<3;j++)
       {
