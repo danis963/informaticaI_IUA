@@ -38,7 +38,7 @@ Fixes de clases que ya pasaron y deben ser solucionados para el año próximo
 - [ ] Agregar gráficos de los operadores lógicos: tablas de verdad y circuitos con lámparas. Ayudaría a comprender el concepto.
 - [ ] En la estructura selectiva simple y doble cambiar los números de las acciones. Puede presentar confusión
 - [ ] En la repetitiva for: agregar ejemplos de acumuladores y anidación
-
+- [ ] While-Do-while: agregar ejercicio de temperatura del agua y contador de contrasñea incorrecta
 
 Project To Do List:
 =======
