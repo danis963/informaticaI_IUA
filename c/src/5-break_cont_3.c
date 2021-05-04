@@ -1,21 +1,23 @@
 #include <stdio.h>
 int main()
 {
-    int   ii  =0;
     int   suma=0;
     int   dato=0;
-    for(ii=0;ii<10;ii++)
+    while(true)
     {
-      printf("Ingrese el dato %d\n",ii);
+      printf("Ingrese un numero \n");
       scanf("%d",&dato);
 
-
-      suma=suma+dato;
-
-      if(dato%2==0)
+      if(dato==-10)
       {
         break;
       }
+
+      if(dato==100)
+      {
+        continue;
+      }
+      suma=suma+dato;
     }
 
     printf("La suma de los numeros ingresados es %d", suma);

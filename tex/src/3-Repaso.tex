@@ -1,0 +1,129 @@
+\documentclass[xcolor=pdftex,table,11pt]{beamer}
+\usetheme{Warsaw}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{listings}
+\usepackage{tabulary}
+
+
+\usepackage[highlightcolor=yellow]{../styles/code}
+\author{Informática I - Instituto Unviersitario Areonáutico}
+\title{Introducción a la programación en C}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\newcommand*{\thead}[1]{\multicolumn{1}{c}{\bfseries #1}}
+
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.3](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+%\institute{} 
+%\date{} 
+%\subject{} 
+\begin{document}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\tableofcontents
+\end{frame}
+
+
+
+
+
+
+\begin{frame}[allowframebreaks]{Repaso general}
+	\begin{itemize}
+	\item Algoritmos
+		\begin{itemize}
+		\item  ¿Qué es un algoritmo?
+		\item  ¿Cómo está compuesto?
+		\item  ¿Qué formas hay de representarlo?
+		\item  ¿Cómo probamos un algoritmo?
+		\end{itemize}
+		
+	  \item Estructura de un programa en C
+		\begin{itemize}
+		\item  ¿Cuales son las etapas de un programa en C?
+		\item  ¿Cual es la entrada y la salida de cada una de ellas?
+		\end{itemize}
+		
+	\item Tipos de datos en C
+		\begin{itemize}
+		\item  ¿Por qué debe indicarse el tipo de dato de una variables?
+		\item  ¿Qué tipos de datos existe en C?
+		\item  ¿Cual es el identificador de formato asociado a cada tipo de dato?
+		\item  ¿Cómo ingreso datos a un programa en C desde el teclado?
+		\item  ¿Cómo imprimo datos en la consola?
+		\end{itemize}
+		
+		\item Operadores en C
+		\begin{itemize}
+		\item  ¿Cuáles son los operadores?
+		\item  ¿Cuál es su precedencia? ¿Cómo lo resuelve C?
+		\item  ¿Qué son y para que se utilizan los operadores de asignación? Ejemplos
+		\end{itemize}
+		
+		\item Estructura switch
+		\begin{itemize}
+		\item  ¿Cuál es su diagrama de flujo?
+		\item  ¿Y el pseudocódigo? 
+		\item  ¿Donde aplicaría una estructura switch?
+		\item ¿Cuál es su representación en diagrama de flujo y en pseudocódigo?
+		\item  ¿Cuál es su sintaxis?
+		
+		\item  ¿Es siempre obligatoria la sentencia break? 
+		\item  ¿Qué ocurre si no ponemos la sentencia break? 
+		\item  ¿Qué ocurre si la variable de seleccion toma un valor no contemplado en los cases.? 
+		\end{itemize}
+		
+		
+		\item Operadores lógicos y relacionales
+		\begin{itemize}
+		\item  ¿Qué tipo de operaciones permite hacer un operador relacional?
+		\item  ¿Cuál es el resultado?
+		\item   ¿Qué tipos de operadores relacionales existen?
+		\item  ¿Con qué tipo de datos trabaja un operador lógico?
+		\item  ¿Cuál es el resultado de una operación lógica?
+		\item  ¿Qué tipos de operadores lógicos existen? 
+	\end{itemize}
+	
+			\item Estructura selectivas
+		\begin{itemize}
+		\item  ¿De qué tipo es la condición a evaluar?
+		\item ¿Cuál es su representación en diagrama de flujo y en pseudocódigo?
+		\item  ¿Qué ocurre si la evaluación de la condición resulta verdadera?
+		\item   ¿Y falsa?
+		\item  ¿Cuál es la diferencia entre la estructura selectiva simple y doble?
+	\end{itemize}
+	
+			\item Estructura repetitiva for
+		\begin{itemize}
+		\item  ¿En qué casos es conveniente su utilización?
+	    \item  ¿Cuál es su representación en diagrama de flujo y pseudocódigo?
+		\item  ¿Cuál es su sintaxis?
+	\end{itemize}
+
+			\item Estructura repetitivas while y do-while
+		\begin{itemize}
+		\item  ¿En qué casos es conveniente su utilización?
+	    \item  ¿Cuál es su representación en diagrama de flujo y pseudocódigo?
+		\item  ¿Cuál es su sintaxis?
+		\item  ¿Cuál es la diferencia con el ciclo repetitivo do?
+	\end{itemize}
+	
+\end{itemize}
+\end{frame}
+\end{document}

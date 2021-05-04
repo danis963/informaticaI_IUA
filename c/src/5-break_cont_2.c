@@ -10,12 +10,14 @@ int main()
       scanf("%d",&dato);
 
 
-      suma=suma+dato;
+
 
       if(dato%2==0)
       {
-        break;
+        continue;
       }
+
+      suma=suma+dato;
     }
 
     printf("La suma de los numeros ingresados es %d", suma);
