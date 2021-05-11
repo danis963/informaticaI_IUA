@@ -39,7 +39,7 @@ int main()
     }
     else
     {
-      printf("Felicitaciones ha acertado el número en el intento %d\n",intentos+1);
+      printf("Felicitaciones ha acertado el número en el intento %d\n",intentos);
     }
 
 
