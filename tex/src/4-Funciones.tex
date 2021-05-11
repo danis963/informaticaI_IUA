@@ -1,0 +1,105 @@
+\documentclass[xcolor=pdftex,table,11pt]{beamer}
+\usetheme{Warsaw}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{listings}
+\usepackage{tabulary}
+
+
+\usepackage[highlightcolor=yellow]{../styles/code}
+\author{Informática I - Instituto Unviersitario Areonáutico}
+\title{Introducción a la programación en C}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\newcommand*{\thead}[1]{\multicolumn{1}{c}{\bfseries #1}}
+
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.3](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+%\institute{} 
+%\date{} 
+%\subject{} 
+\begin{document}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\tableofcontents
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Funciones definición}
+\begin{block}{}
+Las funciones permiten a los desarrolladores dividir un programa en módulos independientes.\\
+\begin{itemize}
+\item Funciones pre-empaquetadas de C: permiten realizar cálculos matemáticos, operaciones con cadenas de texto, operaciones de entrada y salida de datos, etc.
+\item Definidas por el desarrollador: permiten realizar tareas particulares del algoritmo en cuestión.
+\end{itemize}
+
+Las funciones se pueden clasificar en 4 tipos según su naturaleza:
+\begin{itemize}
+\item Si Reciben y si retornan datos: calcular el promedio de dos números
+\item No reciben y si retornan datos: menú de opciones
+\item No reciben y no retornan datos: función saludo
+\item Si reciben y no retornan datos: impresión de datos
+
+
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Anatomía de un función en C}
+
+\begin{block}{Prototipo}
+Consiste en una presentación de la función. En el se define que tipo de dato retorna y si lo hace, el nombre de la misma y el tipo de dato de lo/los parámetros que recibe. En caso de ser mas de un parámetros, se los separa por comas.\\
+\end{block}
+
+Ejemplos de prototipos:
+\codesetstylefrombeamer
+\cppfile{../../c/functions/func_prototype.c}
+
+
+Notar que para indicar que una función no recibe y/o no retorna parámetros, se utiliza la palabra reservada \textbf{void}. Además, las funciones en C pueden recibir muchos valores, pero \textbf{sólo pueden retornar un único dato}.
+
+\newpage
+
+\begin{block}{Especificación formal}
+Como se 
+\end{block}
+
+Ejemplo general:
+\codesetstylefrombeamer
+\cppfile{../../c/functions/func_structure.c}
+
+Ejemplos particulares:
+
+\begin{block}{Ámbito de variables}
+Como se 
+\end{block}
+
+\begin{block}{La sentencia return}
+Como se 
+\end{block}
+
+\end{frame}
+
+
+
+\end{document}
