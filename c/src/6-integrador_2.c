@@ -26,7 +26,7 @@ int main()
       }
       if(nota<nota_min)
       {
-          nota_max=nota;
+          nota_min=nota;
       }
       if(nota>=4)
       {
@@ -40,7 +40,7 @@ int main()
       promedio=promedio+nota;
     }
     aprobados_porc = aprobados/11.0;
-    reprobados_porc = aprobados/11.0;
+    reprobados_porc = reprobados/11.0;
     promedio = promedio/11.0;
 
      printf("La nota mas alta del curso fue: %d \n",nota_max);
