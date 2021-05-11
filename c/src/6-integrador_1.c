@@ -9,7 +9,7 @@ int main()
     int   numero=0;
     int   intentos=0;
     int flag_encontrado=0;
-    printf("%d",numero_aleatorio);
+
     do
     {
       printf("Ingrese un número comprendido entre 0 y 10\n");
