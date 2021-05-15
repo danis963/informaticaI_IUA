@@ -76,13 +76,19 @@ Ejemplos de prototipos:
 \cppfile{../../c/functions/func_prototype.c}
 
 
-Notar que para indicar que una función no recibe y/o no retorna parámetros, se utiliza la palabra reservada \textbf{void}. Además, las funciones en C pueden recibir muchos valores, pero \textbf{sólo pueden retornar un único dato}.
+Notar que para indicar que una función no recibe y/o no retorna parámetros, se utiliza la palabra reservada \textbf{void}. Además, las funciones en C pueden recibir muchos valores y de distintos tipos, pero \textbf{sólo pueden retornar un único dato}.
 
 \newpage
 
-\begin{block}{Especificación formal}
-Como se 
+\begin{block}{Estructura general de una función en C}
+Luego de la declarar el prototipo de la función, se procede a la especificación formal de la misma.
 \end{block}
+
+\begin{block}{La sentencia return}
+Dicha sentencia fuerza la salida inmediata de la función. Es decir que las sentencias que se encuentren después de una sentencia return(); no serán ejecutadas.\\
+Esta sentencia puede ser utilizada para retornar valores, siempre y cuando el tipo de retorno \textbf{no sea void}. 
+\end{block}
+
 
 Ejemplo general:
 \codesetstylefrombeamer
@@ -90,12 +96,42 @@ Ejemplo general:
 
 Ejemplos particulares:
 
-\begin{block}{Ámbito de variables}
-Como se 
-\end{block}
 
-\begin{block}{La sentencia return}
-Como se 
+\cppfile{../../c/functions/func_prom.c}
+
+\cppfile{../../c/functions/func_menu.c}
+
+
+\cppfile{../../c/functions/saludo.c}
+
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Llamada a funciones}
+\begin{itemize}
+\item  Se realiza con el nombre de la función
+\item  Si la función recibe datos, estos deben ser enviados al momento de la llamada. En orden, entre paréntsis y separados por comas
+\item  Si la función NO recibe datos, se deben colocar los paréntesis vacíos
+\item  Si la función retorna parámetros, debemos asignar el valor de retorno a una variable
+\item  Una llamada a una función es una sentencia de C. Por ello debe colocarse el ; al final de la misma
+
+\end{itemize}
+
+
+
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/7-funcion_sumar.c}{\beamergotobutton{Ver ejemplo I completo en github}}
+
+
+\end{frame}
+
+\begin{frame}{Ámbito de variables}
+\begin{block}{Ámbito de variables}
+\begin{itemize}
+\item  Locales: se declaran dentro de una función y sólo están disponibles durante su ejecución. Cuando la función termina, son destruidas.
+\item Globales: Se declaran fuera de las funciones y existen durante todo el ciclo de vida del programa
+\end{itemize}
+
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/7-variables.c}{\beamergotobutton{Ver ejemplo I completo en github}}
 \end{block}
 
 \end{frame}
