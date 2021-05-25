@@ -236,12 +236,59 @@ Ejemplo:
 \end{figure}
 \end{frame}
 
-\codesetstylefrombeamer
-\cppfile{../../c/src/7-swap.c}
-
 \begin{frame}[allowframebreaks]{Volviendo a las funciones: paso por referencia}
 \codesetstylefrombeamer
 \cppfile{../../c/src/7-swap.c}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Ejemplos}
+ \begin{enumerate}
+   
+     \item Diseñar y codificar un programa que recibiendo desde la función main los catetos de un triángulo rectángulo, imprima en la función el resultado de la hipotenusa. \\
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/7-funcion_triangulo.c}{\beamergotobutton{Ver en github}}
+
+\item Modificar el programa anterior para que el resultado sea impreso en la función main.\\
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/7-funcion_triangulo_return.c}{\beamergotobutton{Ver en github}}
+
+
+
+\item Modificar el programa anterior para que el valor de los catetos sea pasado a la función por referencia y la impresión sea realizada en main.
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/7-funcion_triangulo_referencia.c}{\beamergotobutton{Ver en github}}
+
+
+\item Modificar el programa anterior para que la impresión siga siendo realizada en main, pero la función debe tener el siguiente prototipo: void calculoHipotenusa(int *, int*, float *). 
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/7-funcion_triangulo_referenciafull.c}{\beamergotobutton{Ver en github}}
+
+
+\newpage
+     \item Diseñar y codificar un programa que implemente las siguientes funciones:
+     \begin{itemize}
+     \item Impresión de datos personales del desarrollador: debe ejecutarse al inicio del programa. Esta función no recibe ni retorna datos.
+      \item Menú de opciones: debe permitirle al operador seleccionar entre las siguientes opciones:
+      \begin{enumerate}
+      
+            \item Sumar dos números
+            \item Restar dos números
+            \item Imprimir mayor
+            \item Imprimir menor
+        
+     \end{enumerate} 
+	La opción seleccionada debe ser retornada a main.
+	      \item Implementar las funciones del apartado anterior. Los dos números deben ser enviados desde main por valor. El resultado de la suma y resta debe ser impreso en la función. La impresión del mayor y el menor debe hacerse en main().
+	      
+   \end{itemize}
+	      \href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/7-funcion_calculadora.c}{\beamergotobutton{Ver en github}}
+	      
+	      \newpage
+     \item Modificar el programa anterior para que cada uno de los números sea enviado por referencia.      
+     
+     
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/7-funcion_calculadora_refc}{\beamergotobutton{Ver en github}}
+
+
+   \end{enumerate}
+
+
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Funciones y arreglos unidimensionales}
