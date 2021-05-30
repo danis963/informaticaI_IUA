@@ -333,7 +333,19 @@ Ejemplo utilizando un puntero :) :
 \codesetstylefrombeamer
 \cppfile{../../c/src/7-3func_array_1d.c}
 
-\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/7-3func_array_1d.c}{\beamergotobutton{Ver ejemplo completo en github}}
+
+\newpage
+
+\begin{block}{}
+Escritura de una función genérica para trabajar con arreglos del mismo tipo, pero distinta longitud.
+
+\end{block}
+
+
+\codesetstylefrombeamer
+\cppfile{../../c/src/7-3func_array_1d_tam.c}
+
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/7-3func_array_1d_tam.c}{\beamergotobutton{Ver ejemplo completo en github}}
 \end{frame}
 
 
@@ -387,5 +399,64 @@ Ejemplo utilizando un puntero :) :
 
 
 \begin{frame}[allowframebreaks]{Funciones y arreglos bidimensionales}
+
+
+\begin{block}{}
+Para el caso de los arreglos bidimensionales, es necesario indicar en el prototipo de la función la cantidad de columnas que tiene arreglo. Este parámetro es utilizado por el compilador para poder determinar la posición de memoria de cada elemento y así poder operar con ellos.
+
+
+\end{block}
+
+\codesetstylefrombeamer
+\cppfile{../../c/functions/func_array_2d.c}
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/functions/func_array_2d.c}{\beamergotobutton{Ver en github}}
+
+\end{frame}
+
+
+
+\begin{frame}[allowframebreaks]{Ejemplos}
+ \begin{enumerate}
+   
+     \item Diseñar y codificar un programa declare en main un arreglo de 7 filas por 9 columnas y luego implemente las siguientes funciones:
+      \begin{itemize}
+      
+   
+     \item Cargar arreglo
+     \item Imprimir arreglo
+     \item Imprimir la traza de la matriz
+	 \item Imprimir todas las columnas de una fila especifica. El valor de la fila es recibido por valor desde main.
+	 \item Imprimir todas las filas de una columna especifica. El valor de la fila es recibido por referencia desde main..
+	 \item Menú con las opciones citadas anteriormente
+     
+      \end{itemize}
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/7-funcion_triangulo.c}{\beamergotobutton{Ver en github}}
+
+\newpage
+
+     \item Una estación meteorológica toma muestras de temperatura y humedad una vez por hora durante 30 días Dicha información se almacena en dos arreglos bidimensionales declarados de la siguiente manera: \\
+      \vspace{0.35cm}
+     float temperatura [30][24]; \\    
+     float humedad [30][24];\\  
+    \vspace{0.5cm}
+Diseñar y codificar un programa en C que implemente las siguientes funciones:
+      \begin{itemize}
+      
+   
+     \item Cargar arreglos: debe cargar valores aleatorios en los  arreglos. La temperatura debe variar entre $-10^o C$ y $50 ^o C$ y la humedad entre  $0\%$ y $100 \%$ 
+     \item Imprimir las 24 muestras de un día. El número de día se recibe por parámetro desde la función main
+     \item Imprimir la mayor temperatura de un día. El número de día se recibe por referencia desde la función main
+     
+          \item Imprimir la menor temperatura de un día. El número de día se recibe por referencia desde la función main
+          
+          \item Imprimir el día y la hora de la temperatura máxima y mínima
+
+     
+      \end{itemize}
+\href{https://github.com/danis963/informaticaI_IUA/blob/main/c/src/7-funcion_triangulo.c}{\beamergotobutton{Ver en github}}
+
+
+\end{enumerate}
+
 \end{frame}
 \end{document}
