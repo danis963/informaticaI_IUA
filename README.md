@@ -38,7 +38,11 @@ Fixes de clases que ya pasaron y deben ser solucionados para el año próximo
 - [ ] Agregar gráficos de los operadores lógicos: tablas de verdad y circuitos con lámparas. Ayudaría a comprender el concepto.
 - [ ] En la estructura selectiva simple y doble cambiar los números de las acciones. Puede presentar confusión
 - [ ] En la repetitiva for: agregar ejemplos de acumuladores y anidación
-- [ ] While-Do-while: agregar ejercicio de temperatura del agua y contador de contrasñea incorrecta
+- [ ] While-Do-while: agregar ejercicio de temperatura del agua y contador de contraseña incorrecta
+- [ ] Arreglos: agregar un ejemplo gráfico de una estantería para diferenciar valor de índice
+- [ ] Funciones: cambiar el nombre de las variables de paso por valor para notar que el valor se copia
+
+- [ ] Punteros: armar las posiciones de memeria y los links step by step.
 
 Project To Do List:
 =======
@@ -52,4 +56,5 @@ Items relacionados a la estrucutra del proyecto y no tienen relación con el con
 - [ ] Agregar dependencias de latex y C
 - [ ] Generar una version imprimible de los pdf: sin los items apareciendo
 - [ ] Buscar como embeber una terminal en los slides y correr step by step
+- [ ] gitignore
 - [ ] IMPORTANTE: correr programas step by step

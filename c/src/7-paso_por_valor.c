@@ -8,19 +8,17 @@ int main (void)
 	int n1=0;
 	printf("Ingrese un numero \n");
 	scanf("%d",&n1);
-
+	int rdo;
 	
 	printf("N1 antes de llamar a suma_tres %d \n",n1);
-	resultado=suma_tres(n1);
-	printf("N1 despues de llamar a suma_tres %d \n",n1)
-	printf("Valor de resultado %d \n",resultado);
+	rdo=suma_tres(n1);
+	printf("N1 despues de llamar a suma_tres %d \n",n1);
+	printf("Valor de resultado %d \n",rdo);
 
 }
 
-int suma_tres (int n1)
+int suma_tres (int num)
 {
-	int resultado=0;
-	n1=n1+3;
-	resultado=(n1+3);
-	return(resultado);
+	num=(num+3);
+	return(num);
 }
