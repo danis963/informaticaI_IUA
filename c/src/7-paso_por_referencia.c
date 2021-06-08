@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /*PROTOTIPO*/
-int suma_tres(int *); 
+int suma_tres(int *);
 
 int main (void)
 {
@@ -21,6 +21,6 @@ int suma_tres (int *n1)
 {
 	int resultado=0;
 	*n1=*n1+3;
-	resultado=(*n1+3);
+	resultado=*n1;
 	return(resultado);
 }

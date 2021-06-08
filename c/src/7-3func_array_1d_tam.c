@@ -1,7 +1,7 @@
 #include<stdio.h>
 /*PROTOTIPO*/
-void cargar_vector(int [], int); 
-void imprimir_vector(int [],int); 
+void cargar_vector(int [], int);
+void imprimir_vector(int [],int);
 
 
 
@@ -20,11 +20,11 @@ int main (void)
 	printf("Carga del primer arreglo\n");
 	cargar_vector(array_1,10);
 	printf("Carga del segundo arreglo\n");
-	cargar_vector(array_1,3);
+	cargar_vector(array_2,3);
 	printf("Impresion del primer arreglo\n");
 	imprimir_vector(array_1,10);
 	printf("Impresion del segundo arreglo\n");
-	imprimir_vector(array_1,3);
+	imprimir_vector(array_2,3);
 	printf("Reutilizamos las funciones!!!\n");
 	return(0);
 
@@ -44,6 +44,10 @@ void cargar_vector (int vector[], int tam)
 		vector[ii]=dato;
 	}
 }
+
+
+
+
 
 
 
