@@ -1,0 +1,342 @@
+\documentclass[xcolor=pdftex,table,11pt]{beamer}
+\usetheme{Warsaw}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{listings}
+\usepackage{tabulary}
+
+
+\usepackage[highlightcolor=yellow]{../styles/code}
+\author{Informática I - Instituto Unviersitario Areonáutico}
+\title{Introducción a la programación en C}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\newcommand*{\thead}[1]{\multicolumn{1}{c}{\bfseries #1}}
+
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.3](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+
+\begin{document}
+
+\begin{frame}[allowframebreaks]{Arreglos: preguntas conceptuales y snippets para analizar}
+
+
+Preguntas generales:
+
+
+\begin{itemize}
+\item ¿Cuál es la ventaja de tener datos agrupados en arreglos?
+\item ¿Qué propiedades comparten los datos almacenados en arreglos?
+\item Cite ejemplos donde la utilización de arreglos reduzca la complejidad en la codificación de un algoritmo
+\item ¿Cómo se define e inicializa un arreglo unidimensional?
+\item ¿Cómo se define e inicializa un arreglo de dos dimensiones?
+\item Para que se utiliza la directiva \#define
+\end{itemize}
+\newpage
+
+
+Considerando el siguiente snippet, analice:
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/8-1_snippet_array.c}
+
+
+\begin{itemize}
+
+\item ¿Cuál el valor de inicialización de los elementos del arreglo?
+\item ¿Cuál es y que valor tiene el el primer elemento del arreglo?
+\item ¿Cuál es y que valor tiene el el último elemento del arreglo?
+
+\end{itemize}
+
+\newpage
+Analice la siguiente porción de código:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/8-3_snippet_array.c}
+
+
+\begin{itemize}
+
+\item ¿Existen errores o el programa funciona?
+\item ¿Cuál es la relación entre el tipo de dato del arreglo y el valor de los índices?
+\item ¿Qué tipo de dato representa el valor de los índices?
+
+\end{itemize}
+
+
+\newpage
+
+Analice el siguiente snippet y responda:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/8-2_snippet_array.c}
+
+
+\begin{itemize}
+
+\item ¿Cuál es el valor que tiene cada elemento del arreglo luego de la línea 8?
+
+\end{itemize}
+
+
+
+
+\newpage
+
+Analice el siguiente snippet y responda:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/8-2_snippet_array.c}
+
+
+\begin{itemize}
+
+\item ¿Cuál es el valor que tiene cada elemento del arreglo luego de la línea 8?
+
+\end{itemize}
+
+
+\newpage
+
+Analice el siguiente snippet y responda:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/8-4_snippet_array.c}
+
+
+\begin{itemize}
+
+\item ¿Cuál es el valor que tiene cada elemento del arreglo luego de la línea 6?
+
+
+\item ¿Existe algún problema en el código?
+\end{itemize}
+
+\newpage
+
+Analice el siguiente snippet y responda:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/8-5_snippet_array.c}
+
+
+\begin{itemize}
+
+\item ¿Cuál es el valor que tiene cada elemento del arreglo luego de la línea 6?
+
+
+\item ¿Existe algún problema en el código?
+
+\end{itemize}
+
+\newpage
+
+Analice el siguiente snippet y responda:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/8-7_snippet_array.c}
+
+
+\begin{itemize}
+
+\item ¿Qué valor tiene la variable dato luego de la ejecución de la línea 3?
+
+
+\end{itemize}
+
+
+\newpage
+
+Analice el siguiente snippet y responda:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/8-6_snippet_array.c}
+
+
+\begin{itemize}
+
+\item ¿Cuántas filas y cuántas columnas tiene el arreglo declarado?
+
+\item ¿Cuál es el valor que tiene cada elemento del arreglo luego de la línea 4?
+
+
+\end{itemize}
+
+5\end{frame}
+
+\begin{frame}[allowframebreaks]{Punteros: preguntas conceptuales y snippets a analizar}
+
+\newpage
+Considerando que la variable val está almacenada en la posición de memoria 0x0010, analice y responda:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/9-1_snippet_pointer.c}
+
+
+\begin{itemize}
+
+\item ¿Qué imprime cada una de estas lineas?
+
+
+\end{itemize}
+
+
+
+\newpage
+Considerando que la variable val está almacenada en la posición de memoria 0x0010, analice y responda:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/9-2_snippet_pointer.c}
+
+
+\begin{itemize}
+
+\item ¿Qué imprime cada una de estas lineas?
+
+
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}[allowframebreaks]{Funciones: preguntas y snippets a analizar}
+Preguntas generales:
+
+
+\begin{itemize}
+\item Enumere ventajas de la utilización de funciones
+\item ¿Qué es el prototipo de una función?. Mencione cada una de las partes y cite ejemplos
+\item ¿Cómo se realiza la llamada a una función que retorna datos?
+\item ¿Cómo se realiza la llamada a una función que no retorna datos?\item ¿Cuál es la diferencia entre paso de datos por valor y por referencia?
+
+\item Al momento de llamar a una función que recibe parámetros por valor, ¿cómo deben separarse?, ¿qué órden deben tener?
+
+
+\end{itemize}
+\newpage
+Considerando el siguiente snippet:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/10-1_func.c}
+
+
+\begin{itemize}
+
+\item ¿La función retorna datos? ¿De qué tipo?
+\item ¿Cuál es el nombre de la función? 
+\item ¿La función recibe parámetros? ¿De qué forma?
+
+
+\end{itemize}
+
+\newpage
+Considerando el siguiente snippet:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/10-2_func.c}
+
+
+\begin{itemize}
+
+\item ¿Es correcta la llamada a la función? ¿Qué le modificaría?
+\item ¿Qué parámetro puede ser modificado por la función? ¿Por qué? 
+
+\end{itemize}
+
+\newpage
+Considerando el siguiente snippet:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/10-4_func.c}
+
+
+\begin{itemize}
+
+\item ¿Es correcta la llamada a la función? ¿Qué le modificaría?
+\item ¿Qué valor tienen las variables n1, n2 y n1f luego de la ejecución de la función?
+
+\item ¿Qué valores retorna la función prom(int, int, float *)?
+
+\item ¿Qué variables puede modificar la función prom(int, int, float *)?
+
+
+\end{itemize}
+
+\newpage
+Considerando el siguiente snippet:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/10-5_func.c}
+
+
+\begin{itemize}
+
+\item Modifique la función para que almacene en la variable n1f el valor del promedio de las variables n1 y n2.
+
+\item Modifique la función para que almacene en la variable n1f el promedio de n1 y n2. La función debe retornar valores
+\end{itemize}
+ 
+
+
+\newpage
+Considerando el siguiente snippet:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/10-6_func.c}
+
+
+\begin{itemize}
+
+\item ¿Qué esperaría que imprima este programa?
+
+\item ¿Cuál es la diferencia entre variables locales y globales?
+
+\item ¿Qué tipo de variables hay implementadas en este programa?
+
+\end{itemize}
+
+\newpage
+Considerando el siguiente snippet:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/10-7_func.c}
+
+
+\begin{itemize}
+
+\item ¿Qué esperaría que imprima este programa?
+
+\item ¿Cuál es la diferencia entre variables locales y globales?
+
+\item ¿Qué tipo de variables hay implementadas en este programa?
+
+\end{itemize}
+
+\newpage
+Considerando el siguiente snippet:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/10-8_func.c}
+
+
+\begin{itemize}
+
+\item ¿Qué esperaría que imprima este programa?
+
+\item ¿Cuál es valor de n1, n2 y n3 luego de la ejecución de la línea 7?
+
+\end{itemize}
+
+
+\end{frame}
+
+
+\end{document}

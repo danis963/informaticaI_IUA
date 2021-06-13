@@ -1,0 +1,1 @@
+void convertFloatToInt (int , float *);
