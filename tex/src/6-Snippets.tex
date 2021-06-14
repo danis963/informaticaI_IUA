@@ -37,7 +37,7 @@ Preguntas generales:
 \item Cite ejemplos donde la utilización de arreglos reduzca la complejidad en la codificación de un algoritmo
 \item ¿Cómo se define e inicializa un arreglo unidimensional?
 \item ¿Cómo se define e inicializa un arreglo de dos dimensiones?
-\item Para que se utiliza la directiva \#define
+\item ¿Para qué se utiliza la directiva \#define ?
 \end{itemize}
 \newpage
 
@@ -93,21 +93,6 @@ Analice el siguiente snippet y responda:
 Analice el siguiente snippet y responda:
 
 \codesetstylefrombeamer
-\cppfile{../../c/snippets/snippet/8-2_snippet_array.c}
-
-
-\begin{itemize}
-
-\item ¿Cuál es el valor que tiene cada elemento del arreglo luego de la línea 8?
-
-\end{itemize}
-
-
-\newpage
-
-Analice el siguiente snippet y responda:
-
-\codesetstylefrombeamer
 \cppfile{../../c/snippets/snippet/8-4_snippet_array.c}
 
 
@@ -125,6 +110,23 @@ Analice el siguiente snippet y responda:
 
 \codesetstylefrombeamer
 \cppfile{../../c/snippets/snippet/8-5_snippet_array.c}
+
+
+\begin{itemize}
+
+\item ¿Cuál es el valor que tiene cada elemento del arreglo luego de la línea 6?
+
+
+\item ¿Existe algún problema en el código?
+
+\end{itemize}
+
+\newpage
+
+Analice el siguiente snippet y responda:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/8-52_snippet_array.c}
 
 
 \begin{itemize}
@@ -169,11 +171,10 @@ Analice el siguiente snippet y responda:
 
 \end{itemize}
 
-5\end{frame}
+\end{frame}
 
 \begin{frame}[allowframebreaks]{Punteros: preguntas conceptuales y snippets a analizar}
 
-\newpage
 Considerando que la variable val está almacenada en la posición de memoria 0x0010, analice y responda:
 
 \codesetstylefrombeamer
@@ -219,6 +220,10 @@ Preguntas generales:
 
 \item Al momento de llamar a una función que recibe parámetros por valor, ¿cómo deben separarse?, ¿qué órden deben tener?
 
+
+\item ¿Para qué se utiliza la sentencia return?
+\item ¿Puede una función retornar mas de un valor?
+\item ¿Puede una función tener mas de una sentencia return?
 
 \end{itemize}
 \newpage
@@ -338,5 +343,37 @@ Considerando el siguiente snippet:
 
 \end{frame}
 
+
+
+
+\begin{frame}[allowframebreaks]{Arreglos, punteros y funciones: preguntas y snippets para analizar}
+Preguntas generales:
+
+
+\begin{itemize}
+\item ¿Cómo se define un puntero a un arreglo?
+\item ¿Una función puede recibir un arreglo por valor?
+\item ¿Qué debe modificarse para que una función trabaje con una matriz en lugar de un arreglo de una dimensión?
+
+
+\end{itemize}
+\newpage
+Considerando el siguiente snippet:
+
+\codesetstylefrombeamer
+\cppfile{../../c/snippets/snippet/10-9_func_array.c}
+
+
+\begin{itemize}
+
+\item ¿La función recibe un arreglo? ¿de cuantas dimensiones?
+\item En caso de recibir un arreglo, ¿de qué manera lo hace? 
+\item ¿Qué se debería modificar para recibir arreglos de mas o menos dimensiones?
+
+
+
+\end{itemize}
+
+\end{frame}
 
 \end{document}
