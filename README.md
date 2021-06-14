@@ -58,3 +58,4 @@ Items relacionados a la estrucutra del proyecto y no tienen relación con el con
 - [ ] Buscar como embeber una terminal en los slides y correr step by step
 - [ ] gitignore
 - [ ] IMPORTANTE: correr programas step by step
+- [ ] TexLinter: https://tex.stackexchange.com/questions/26102/latex-code-sniffer-and-or-beautifier
