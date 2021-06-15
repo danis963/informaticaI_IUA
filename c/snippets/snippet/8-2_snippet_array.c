@@ -6,3 +6,4 @@
   array[a+b]=-190.58;
   array[a+b+1]=-190.58;
   array[b-1]=0.5;
+  array[a]=0.58;
