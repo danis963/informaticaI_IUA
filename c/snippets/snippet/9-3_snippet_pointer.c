@@ -1,8 +1,9 @@
  int *ptr=NULL;
- int  val=5;
+ char val='c';
  
  ptr=&val;
-
+ *ptr='a';
+ 
  printf("Valor de val %d\n",val);
  printf("Posicion de memoria de val %p\n",&val);
  printf("Valor de ptr %p\n",ptr);
